@@ -70,6 +70,32 @@ $(function() {
 });
 ```
 
+```javascript
+jQuery(document).ready(function ($) {
+    $('.inc42-secondary:not(.search-sidebar-wrapper) .widget-sidebar:last-child').smartSticky({
+        show: {
+	    immediately: true,
+            delay: 50,   /* ignored when immediately set to true */
+            original: {
+                under: true,
+                above: false
+            },
+            fixed: 'toggle',
+            scrolling: {
+                up: true,
+                down: true
+            }
+        },
+        container: '#secondary',
+		css: {
+			fixed: {
+				left: 12,
+				width: 368,
+			}
+		}
+    });
+});
+```
 
 ### Options
 
